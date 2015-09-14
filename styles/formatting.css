@@ -144,10 +144,14 @@ header{
 	position: relative;
 }
 
-#aboutname{
+.divname{
 	padding-top: 60px;
 	padding-left: 20px;
 	padding-bottom: 75px;
+}
+
+#sponsorname{
+	padding-bottom: 25px;
 }
 
 #social{
@@ -165,4 +169,23 @@ header{
 	width: 100px;
 	margin-left: 75px;
 	margin-top: 5px;
+}
+
+.sponsor{
+	height: 100vh;
+}
+
+.sponsorlink{
+	color: #7cacff;
+	font-weight: bold;
+}
+
+#partnertext{
+	padding-top: 30px;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.sponsorlogo{
+	width: 100%;
 }
