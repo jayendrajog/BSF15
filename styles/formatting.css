@@ -6,12 +6,17 @@ body{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 }
-
 .navbar{
  	background: rgba(255, 255, 255, 0);
  	border: 0;
- 	position: relative;
  	font-color: white;
+ 	height: 90px;
+ 	z-index: 999;
+ 	-webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
 }
 
 .navbar-left > li > a{
@@ -21,6 +26,11 @@ body{
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: bold;
+   -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .navbar-right > li > a{
@@ -30,6 +40,11 @@ body{
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: bold;
+   -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .nav.navbar-nav.navbar-left li a {
@@ -38,6 +53,19 @@ body{
 
 .nav.navbar-nav.navbar-right li a {
     color: #7cacff;
+}
+
+.navbar.smaller{
+	height: 50px;
+}
+.navbar-left.smaller> li> a{
+	 margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.navbar-right.smaller> li> a{
+	 margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 #signup-text{
@@ -71,7 +99,8 @@ body{
 	font-size: 18px;
 }
 header{
-	height: 100vh;
+	height: 90vh;
+	padding-top: 10vh;
 }
 
 #MainLogo{
@@ -82,7 +111,7 @@ header{
 #MainName{
 	color: white;
 	text-align: left;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 72px;
 	padding-left: 40px;
 	padding-top: 10px;
@@ -104,4 +133,8 @@ header{
 	margin-left: 70px;
 	margin-right: 70px;
 	border-color: black;
+}
+
+.about{
+	height: 100vh;
 }
