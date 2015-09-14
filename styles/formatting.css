@@ -6,8 +6,23 @@ body{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 }
+
+h1{
+	color: white;
+	text-align: left;
+	font-weight: 800;
+	font-size: 72px;
+	padding-left: 40px;
+	padding-top: 10px;
+}
+
+p{
+	line-height: 1.2;
+	font-size: 21px;
+	margin-bottom: 30px;
+}
 .navbar{
- 	background: rgba(255, 255, 255, 0);
+ 	background: rgba(0, 0, 0, 0);
  	border: 0;
  	font-color: white;
  	height: 90px;
@@ -76,7 +91,6 @@ body{
    font-weight: normal;
 }
 
-
 @media(max-width: 667px)
 {
 	.navbar-nav > li{
@@ -84,7 +98,6 @@ body{
 	  margin-right:0px;
 	}
 }
-
 
 .content{
 	padding-top: 30px;
@@ -108,15 +121,6 @@ header{
 	margin-right: 40px;
 }
 
-#MainName{
-	color: white;
-	text-align: left;
-	font-weight: 800;
-	font-size: 72px;
-	padding-left: 40px;
-	padding-top: 10px;
-}
-
 .signup{
 	text-align: center;
 }
@@ -137,4 +141,28 @@ header{
 
 .about{
 	height: 100vh;
+	position: relative;
+}
+
+#aboutname{
+	padding-top: 60px;
+	padding-left: 20px;
+	padding-bottom: 75px;
+}
+
+#social{
+	margin-top: 60px;
+}
+
+.fa{
+	color: white;
+	margin-right: 40px;
+	height: 40px;
+	width: 40px;
+}
+.clublogo{
+	height: 100px;
+	width: 100px;
+	margin-left: 75px;
+	margin-top: 5px;
 }
