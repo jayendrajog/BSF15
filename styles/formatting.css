@@ -5,6 +5,7 @@ body{
 	background-position: center center;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
 }
 
 h1{
@@ -121,8 +122,6 @@ p{
 
 .content{
 	padding-top: 30px;
-	padding-left: 60px;
-	padding-right: 60px;
 	position: relative;
 }
 .date-time{
@@ -165,6 +164,7 @@ header{
 .about{
 	height: 100vh;
 	position: relative;
+	padding-left: 60px;
 }
 
 .divname{
@@ -184,7 +184,7 @@ header{
 .fa{
 	color: white;
 	margin-right: 40px;
-	height: 40px;
+	height: 32px;
 	width: 40px;
 }
 .clublogo{
@@ -195,7 +195,14 @@ header{
 }
 
 .sponsor{
-	height: 100vh;
+	height: 100%;
+	background-color: white;
+	color: black;
+	width: 100vw;
+}
+
+.sponsor h1{
+	color: black;
 }
 
 .sponsorlink{
@@ -211,4 +218,13 @@ header{
 
 .sponsorlogo{
 	width: 100%;
+}
+
+.sponsorcontent{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.sponsor .row{
+	padding-top: 5vh;
 }
