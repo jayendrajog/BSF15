@@ -1,18 +1,20 @@
 window.onload = function(){
+	var NAV_SCROLL_MAX = 450;
 	window.addEventListener('scroll', function(e)
 	{
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 350,
+            shrinkOn = 600,
             navbar = document.querySelector(".navbar"),
             header = document.querySelector(".navbar-left"),
             header2 = document.querySelector(".navbar-right");
-        if(distanceY > shrinkOn - 100 && distanceY <= shrinkOn)
+        var shading = distanceY/NAV_SCROLL_MAX;
+        if(distanceY > NAV_SCROLL_MAX && distanceY <= shrinkOn)
         {
         	$('.navbar').css('background-color', 'rgba(0, 0, 0, 1)');
         }
-        else if(distanceY < shrinkOn)
+        else if(distanceY < NAV_SCROLL_MAX)
         {
-        	$('.navbar').css('background-color', 'rgba(0, 0, 0, 0)');
+        	$('.navbar').css('background-color', 'rgba(0, 0, 0,' + shading +')');
         }
         if (distanceY > shrinkOn) {
         	$('.navbar').css('background-color', 'rgba(0, 0, 0, 1)');
@@ -30,3 +32,11 @@ window.onload = function(){
         }
     });
 }
+
+var $root = $('html, body');
+$('a').click(function() {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
