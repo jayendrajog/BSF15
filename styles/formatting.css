@@ -19,7 +19,7 @@ h1{
 
 p{
 	line-height: 1.2;
-	font-size: 21px;
+	font-size: 18px;
 	margin-bottom: 30px;
 }
 .navbar{
@@ -128,7 +128,7 @@ p{
 	text-align: center;
 	font-weight: bold;
 	margin-top: 50px;
-	font-size: 18px;
+	font-size: 14px;
 }
 header{
 	height: 90vh;
@@ -149,9 +149,9 @@ header{
 	color: white;
 	font-weight: bold;
 	margin-top: 35px;
-	font-size: 24px;
-	height: 55px;
-	width: 195px;
+	font-size: 18px;
+	height: 50px;
+	width: 150px;
 	border-radius: 10px;
 	margin-left: 70px;
 	margin-right: 70px;
@@ -167,14 +167,22 @@ header{
 	padding-left: 60px;
 }
 
+.about .col-md-4{
+	text-align: center;
+}
+
 .divname{
 	padding-top: 60px;
 	padding-left: 20px;
-	padding-bottom: 75px;
+	padding-bottom: 90px;
 }
 
 #sponsorname{
 	padding-bottom: 25px;
+}
+
+#heal{
+	width: 77%;
 }
 
 #social{
@@ -190,8 +198,6 @@ header{
 .clublogo{
 	height: 100px;
 	width: 100px;
-	margin-left: 75px;
-	margin-top: 5px;
 }
 
 .sponsor{
@@ -203,6 +209,10 @@ header{
 
 .sponsor h1{
 	color: black;
+}
+
+.sponsor .col-md-6{
+	text-align: center;
 }
 
 .sponsorlink{
