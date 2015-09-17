@@ -38,17 +38,6 @@ $('a').click(function() {
     $root.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
-    return false;
-});
 
-$(document).ready(function()
-{
-	$('.navbar-left li a').click(function(e){
-		alert(lol);
-		var $this = $(this);
-	 	if (!$this.hasClass('active')) {
-	    $this.addClass('active');
-	  	}
-	 	e.preventDefault();
-	});
+    return false;
 });
