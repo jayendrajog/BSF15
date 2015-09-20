@@ -1,9 +1,12 @@
-body{
-	 
+body{ 
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	margin: 0;
+	background-image: url("../images/BSFbackground.png");
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: center center;
 }
 
 h1{
@@ -21,12 +24,6 @@ p{
 	margin-bottom: 30px;
 }
 
-.content{
-	/*background-image: url("../images/BSFbackground.png");
-	background-size: cover;
-	background-repeat: repeat;
-	background-position: center center;*/
-}
 
  .container {
       position: absolute;
