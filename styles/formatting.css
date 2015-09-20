@@ -1,11 +1,9 @@
 body{
-	background-image: url("../images/candy.shader-bg.jpg");
-	background-size: cover;
-	background-repeat: repeat;
-	background-position: center center;
+	 
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
+	margin: 0;
 }
 
 h1{
@@ -22,6 +20,21 @@ p{
 	font-size: 18px;
 	margin-bottom: 30px;
 }
+
+.content{
+	/*background-image: url("../images/BSFbackground.png");
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: center center;*/
+}
+
+ .container {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+
 .navbar{
  	background: rgba(0, 0, 0, 0);
  	border: 0;

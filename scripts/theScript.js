@@ -1,3 +1,5 @@
+
+
 window.onload = function(){
 	var NAV_SCROLL_MAX = 450;
 	window.addEventListener('scroll', function(e)
@@ -31,7 +33,7 @@ window.onload = function(){
             }
         }
     });
-}
+};
 
 var $root = $('html, body');
 $('a').click(function() {
@@ -41,3 +43,4 @@ $('a').click(function() {
 
     return false;
 });
+
