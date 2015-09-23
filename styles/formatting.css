@@ -101,6 +101,13 @@ p{
 	height: 40px;
 }
 
+@media(max-width: 768px)
+{
+	.navbar-collapse{
+		background-color: black;
+	}
+}
+
 #signup-text{
    pointer-events: none;
    cursor: default;
@@ -111,6 +118,10 @@ p{
 
 @media(max-width: 667px)
 {
+	.navbar{
+		background: rgba(0, 0, 0, 0);
+	}
+
 	.navbar-nav > li{
 	  margin-left:0px;
 	  margin-right:0px;
@@ -236,4 +247,8 @@ header{
 
 .sponsor .row{
 	padding-top: 5vh;
+}
+
+#taboola{
+	width: 80%;
 }
