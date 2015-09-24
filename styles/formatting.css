@@ -169,6 +169,13 @@ header{
     background-color: gray;
 }
 
+@media(max-width: 990px)
+{
+  #MainName{
+    margin-right: 20px;
+  }
+}
+
 #MainLogo{
 	width: 200px;
 	margin-right: 40px;
@@ -191,18 +198,59 @@ header{
 	margin-right: 70px;
 	border-color: black;
 }
+
+@media(max-width: 570px)
+{
+    .signup-buttons{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (min-width:500px) and (max-width: 995px)
+{
+    #MainLogo
+    {
+       margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 50px;
+    }
+    #MainName
+    {
+        padding-left: 50px;
+        
+    }
+}
+
+/*
+@media(max-width: 760px)
+{
+    #MainLogo{
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 50px;
+    }
+}
+*/
 .signup-buttons:hover{
 	background-color: #b738a7;
 	border-color: #b738a7;
 }
 
 .about{
-	height: 100vh;
+	height: 100%;
 	position: relative;
 	padding-left: 60px;
-	background-color:#b738a7;
+	background-color:#3498DB;
 }
-
+@media(max-width: 990px)
+{
+    .about{
+        padding-left: 30px;
+        padding-right: 30px;   
+    }
+}
 .about .col-md-4{
 	text-align: center;
 }
