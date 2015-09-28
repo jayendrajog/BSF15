@@ -164,9 +164,11 @@ p{
 	font-size: 14px;
 }
 header{
+	position: relative;
 	height: 100%;
 	padding-top: 10vh;
-    background-color: gray;
+	padding-bottom: 20px;
+    background-color: #b738a7;
 }
 
 @media(max-width: 990px)
@@ -242,6 +244,7 @@ header{
 	height: 100%;
 	position: relative;
 	padding-left: 60px;
+	padding-bottom: 30px;
 	background-color:#3498DB;
 }
 @media(max-width: 990px)
