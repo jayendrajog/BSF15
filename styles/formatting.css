@@ -2,7 +2,7 @@ body{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
-	margin: 0;
+	margin: 0px;
 	background-color: white;
 /*	background-image: url("../images/BSFbackground.png");
 	background-size: cover;
@@ -112,6 +112,10 @@ p{
 	.navbar-collapse{
 		background-color: black;
 	}
+
+	#MainName{
+		text-align: center;
+	}
 }
 
 #signup-text{
@@ -136,7 +140,7 @@ p{
 .content{
 	padding-top: 30px;
 	position: relative;
-	background-color: white;
+	background-color: #b738a7;
 }
 
 /* Tablet version */
@@ -151,6 +155,7 @@ p{
 	}
 	#MainLogo{
 		width: 150px;
+		padding-left: 10vw;
 	}
 	#mainlogodiv{
 		text-align: center;
@@ -262,6 +267,10 @@ header{
 	padding-top: 60px;
 	padding-left: 20px;
 	padding-bottom: 90px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 #sponsorname{
