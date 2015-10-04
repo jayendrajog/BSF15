@@ -3,11 +3,16 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	margin: 0px;
-	background-color: white;
+	background-color: #f1f1f1;
 /*	background-image: url("../images/BSFbackground.png");
 	background-size: cover;
 	background-repeat: repeat;
 	background-position: center center;*/
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #3498db;
+	text-decoration: none;
 }
 
 h1{
@@ -15,7 +20,6 @@ h1{
 	text-align: left;
 	font-weight: 800;
 	font-size: 72px;
-	padding-left: 40px;
 	padding-top: 10px;
 }
 
@@ -76,6 +80,12 @@ p{
     transition: all 0.3s;
 }
 
+#MainName {
+	font-weight: 600;
+	margin-top: 30px;
+	margin-left: 53px;
+}
+
 .navbar-right > li > a{
   display: table-cell;
   font-size: 14px;
@@ -87,24 +97,24 @@ p{
     transition: all 0.3s;
 }
 
-.nav.navbar-nav.navbar-left li a {
-    color: white;
-}
-
 .nav.navbar-nav.navbar-left li a:hover {
-    color: #b738a7;
+    color: #d31cbc;
 }
 
 .nav.navbar-nav.navbar-right li a {
-    color: #7cacff;
+    color: #3498db;
 }
 
 .nav.navbar-nav.navbar-right li a:hover {
-    color: #b738a7;
+    color: #d31cbc;
 }
 
 .navbar.smaller{
 	height: 40px;
+}
+
+.sponsor .row{
+	padding-bottom: 5vh;
 }
 
 @media(max-width: 768px)
@@ -122,7 +132,7 @@ p{
    pointer-events: none;
    cursor: default;
    margin-right: 0px;
-   color: white;
+   color: #777777;
    font-weight: normal;
 }
 
@@ -140,7 +150,7 @@ p{
 .content{
 	padding-top: 30px;
 	position: relative;
-	background-color: #b738a7;
+	background-color: #f1f1f1;
 }
 
 /* Tablet version */
@@ -165,22 +175,29 @@ p{
 }
 .date-time{
 	text-align: center;
-	font-weight: bold;
-	margin-top: 50px;
-	font-size: 14px;
+	font-weight: 600;
+	color: #777777;
+	margin-top: 30px;
+	font-size: 16px;
 }
 header{
 	position: relative;
 	height: 100vh;
 	padding-top: 10vh;
-    background-color: #b738a7;
+	background-color: #f1f1f1;
 }
 
-@media(max-width: 990px)
-{
+@media(max-width: 990px) {
   #MainName{
     margin-right: 20px;
   }
+	
+	.sponsor .row {
+		padding-bottom: 0;
+	}
+	.sponsorlogo {
+		margin-bottom: 20px;
+	}
 }
 
 #MainLogo{
@@ -193,63 +210,51 @@ header{
 }
 
 .signup-buttons{
-	background-color: black;
-	color: white;
+	color: #3498db;
 	font-weight: bold;
 	margin-top: 35px;
 	font-size: 18px;
-	height: 50px;
-	width: 150px;
-	border-radius: 10px;
-	margin-left: 70px;
-	margin-right: 70px;
-	border-color: black;
+	border-radius: none;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: transparent;
+	border-color: transparent;
 }
 
-@media(max-width: 570px)
-{
+.signup-buttons:hover {
+	-webkit-animation: registerHover .4s ease;
+	color: #d31cbc;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+@media(max-width: 570px) {
     .signup-buttons{
         margin-left: 10px;
         margin-right: 10px;
     }
-
+	  header {
+			margin-bottom: 40px;
+		}
 }
 
-@media (min-width:500px) and (max-width: 995px)
-{
-    #MainLogo
-    {
+@media (min-width:500px) and (max-width: 995px) {
+    #MainLogo {
        margin-left: 50px;
         margin-right: 50px;
         padding-left: 50px;
     }
-    #MainName
-    {
+    #MainName {
         padding-left: 50px;
         
     }
-}
-
-/*
-@media(max-width: 760px)
-{
-    #MainLogo{
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-left: 50px;
-    }
-}
-*/
-.signup-buttons:hover{
-	background-color: #b738a7;
-	border-color: #b738a7;
 }
 
 .about{
 	height: 100%;
 	position: relative;
 	padding-left: 60px;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 	background-color:#3498DB;
 }
 @media(max-width: 990px)
@@ -258,6 +263,10 @@ header{
         padding-left: 30px;
         padding-right: 30px;   
     }
+	
+		.about p {
+			font-size:16px;
+		}
 }
 .about .col-md-4{
 	text-align: center;
@@ -265,8 +274,7 @@ header{
 
 .divname{
 	padding-top: 60px;
-	padding-left: 20px;
-	padding-bottom: 90px;
+	padding-bottom: 50px;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
@@ -275,8 +283,8 @@ header{
 }
 
 #sponsorname{
-	color: #333333;
-	padding-bottom: 25px;
+	color: #555555;
+	padding-bottom: 0;
 }
 
 #heal{
@@ -289,7 +297,7 @@ header{
 
 @media(max-width: 992px){
 	.divname{
-		padding-top: 20px;
+		padding-top: 40px;
 		padding-bottom: 20px;
 		text-align: center;
 	}
@@ -310,8 +318,9 @@ header{
 .fa{
 	color: white;
 	margin-right: 40px;
-	height: 32px;
+	height: 40px;
 	width: 40px;
+	font-size: 30px;
 }
 .clublogo{
 	height: 100px;
@@ -320,13 +329,10 @@ header{
 
 .sponsor{
 	height: 100%;
+	color: #777777;
 	background-color: white;
-	color: black;
 	width: 100vw;
-}
-
-.sponsor h1{
-	color: black;
+	padding-bottom: 40px;
 }
 
 .sponsor .col-md-6{
@@ -334,12 +340,12 @@ header{
 }
 
 .sponsorlink{
-	color: #7cacff;
+	color: #3498db;
 	font-weight: bold;
 }
 
-#partnertext{
-	padding-top: 30px;
+.partnertext{
+	margin-top: 50px;
 	font-weight: bold;
 	font-size: 21px;
 }
@@ -353,10 +359,28 @@ header{
 	padding-right: 60px;
 }
 
-.sponsor .row{
-	padding-top: 5vh;
-}
-
 #taboola{
 	width: 80%;
+}
+
+#ezkie{
+	width: 80%;
+}
+
+#wemash{
+	width: 75%;
+}
+
+#whisper{
+	padding-left: 20px;
+}
+
+
+@-webkit-keyframes registerHover {
+	from {
+		color: #3498db;
+	}
+	to {
+		color: #d31cbc;
+	}
 }
