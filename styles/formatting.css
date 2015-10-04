@@ -360,6 +360,7 @@ header{
 }
 
 #taboola{
+<<<<<<< HEAD
 	width: 80%;
 }
 
@@ -375,6 +376,11 @@ header{
 	padding-left: 20px;
 }
 
+=======
+	width: 80%;
+}
+
+>>>>>>> 16026dca53c52f416858234f5014e9ab2dc7c9f7
 
 @-webkit-keyframes registerHover {
 	from {
