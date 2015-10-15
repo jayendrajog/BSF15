@@ -201,7 +201,9 @@ header{
 }
 
 #MainLogo{
-	width: 200px;
+	/*width: 200px;*/
+	height: 353px;
+	width: 353px;
 	margin-right: 40px;
 }
 
@@ -242,7 +244,7 @@ header{
     #MainLogo {
        margin-left: 50px;
         margin-right: 50px;
-        padding-left: 50px;
+        padding-left: 0px;
     }
     #MainName {
         padding-left: 50px;
@@ -313,6 +315,11 @@ header{
 	.col-md-6 > #social{
 	padding-left: 17vw;
 	}
+	
+	#MainLogo {
+		width: 80%;
+		height: 80%;
+	}	
 }
 
 .fa{
