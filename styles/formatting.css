@@ -366,9 +366,22 @@ header{
 	padding-right: 60px;
 }
 
+#classy {
+    margin-top: -60px;
+    margin-bottom: -60px;
+}
+
 #taboola{
-<<<<<<< HEAD
 	width: 80%;
+}
+
+#tenoneten, #soothe {
+    width: 50%;
+    margin-left: 50px;
+}
+
+#shift {
+    margin-top: 20px;
 }
 
 #ezkie{
@@ -383,11 +396,15 @@ header{
 	padding-left: 20px;
 }
 
-=======
-	width: 80%;
+#flyy {
+    width: 50%;
+    margin-left: 40px;
 }
 
->>>>>>> 16026dca53c52f416858234f5014e9ab2dc7c9f7
+#rackspace {
+    margin-top: 20px;
+}   
+
 
 @-webkit-keyframes registerHover {
 	from {
