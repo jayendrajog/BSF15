@@ -375,9 +375,18 @@ header{
 	width: 80%;
 }
 
+/*OLD FORMAT (REFERENCE TO HTML)
 #tenoneten, #soothe {
     width: 50%;
     margin-left: 50px;
+}*/
+
+#tenoneten, #soothe {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #shift {
@@ -393,12 +402,16 @@ header{
 }
 
 #whisper{
-	padding-left: 20px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #flyy {
     width: 50%;
-    margin-left: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #rackspace {
